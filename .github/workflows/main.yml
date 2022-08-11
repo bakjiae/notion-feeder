@@ -4,6 +4,7 @@ name: Get Feed
 #   schedule:
 #     - cron: '5 * * * *' # 6pm IST
 #   workflow_dispatch:
+
 on:
   push:
     branches: [ "master" ]
