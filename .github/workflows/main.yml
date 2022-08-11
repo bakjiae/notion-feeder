@@ -1,15 +1,9 @@
 name: Get Feed
 
-# on:
-#   schedule:
-#     - cron: '5 * * * *' # 6pm IST
-#   workflow_dispatch:
-
 on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+  schedule:
+    - cron: '30 23 * * *' # 6pm IST
+  workflow_dispatch:
 
 jobs:
   get-feed:
